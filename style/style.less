@@ -1,0 +1,132 @@
+@import 'constants.less';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+ font-family:  Arial, sans-serif;
+ font-size: 14px;
+ margin: 0;
+ padding: 0;
+}
+
+.l-main-container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: block;
+
+  h1 {
+    color: @font-color;
+    margin: 0 10px;
+    padding: 20px 10px 0;
+    text-align: center;
+  }
+
+  .form-button {
+    display: block;
+    border: none;
+    background-color: @bg-grey;
+    height: 38px;
+    line-height: 32px;
+    padding: 3px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    &:focus, &:hover {
+      background: @bg-grey-3;
+    }
+
+    &.selected {
+      border: 2px solid @bg-grey-3;
+    }
+  }
+
+  .submit {
+    background: @bg-amber;
+    color: @bg-white;
+    margin-left: auto;
+
+    &:focus, &:hover {
+      background: @bg-amber-2;
+    }
+
+    &:disabled {
+      background: @bg-grey;
+    }
+  }
+
+  .bank-account-list {
+    border-bottom: 1px solid @bg-grey-2;
+    margin-bottom: 5px;
+  }
+  
+  .container  {
+    width: 960px;
+    margin: 0 auto;
+    background: @bg-white;
+    min-height: 700px;
+    padding: 20px 10px;
+    padding-top: 50px;
+  }
+
+  .login-form {
+    width: 600px;
+    border: 1px solid @bg-grey;
+    border-radius: 3px;
+    padding: 30px;
+    margin: auto;
+  }
+
+  .bank-accounts-container {
+    .form-button {
+      margin: 0 auto;
+    }
+  }
+  
+  .l-error {
+    display: block;
+    margin: 10px;
+    background: @error-bg;
+    border-radius: 5px;
+    border: 1px solid @error-border;
+    height: 28px;
+    padding: 5px;
+  }
+
+  .l-form-control {
+    padding-bottom: 10px;
+
+    .l-form-control-label {
+      font-weight: bold;
+      padding: 5px 0;
+      width: 100%;
+    }
+    
+    input {
+      border-radius: 3px;
+      padding: 3px 3px 3px 10px;
+      line-height: 32px;
+      font-size: 18px;
+      border: none;
+      border: 1px solid @bg-grey;
+      width: 100%;
+  
+      &:focus {
+        border: 1px solid @bg-grey-3;
+      }
+    }
+
+    .l-form-control-validation-msg {
+      color: @error-border;
+      padding: 5px;
+    }
+  }
+}
