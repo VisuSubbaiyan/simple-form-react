@@ -54,6 +54,7 @@
   "dependencies": {
     "babel-preset-stage-1": "^6.1.18",
     "i": "^0.3.6",
+    "iban": "0.0.10",
     "npm": "^5.5.1",
     "prop-types": "^15.5.10",
     "react": "^15.6.2",

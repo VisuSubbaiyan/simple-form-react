@@ -26,7 +26,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new HtmlPlugin({title: 'Smava challenge', template: 'index.ejs', inject: true}),
+    new HtmlPlugin({title: 'simple form', template: 'index.ejs', inject: true}),
 	  new ExtractTextPlugin('style.css')
   ],
   devServer: {

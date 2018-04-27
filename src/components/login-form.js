@@ -94,7 +94,7 @@ class LoginForm extends Component {
         lastName,
         email,
         bankAccounts: Object.values(bankAccounts).map(bankAccount => ({iban: bankAccount.IBAN, bankName: bankAccount.bankName}))
-      }));
+      }, undefined , 4));
         // submit Action to show popup with required data
         // Need to pick firstName, lastName, email and bankAccounts needs to be shown in ModelPopup 
     }
